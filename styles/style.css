@@ -128,7 +128,10 @@ main section:first-of-type span[data-text]::after {
 }
 
 main section:first-of-type span:nth-of-type(2) {
+	display: flex;
+	align-items: center;
 	background: var(--daniel-pink);
+	color: var(--daniel-black);
 }
 
 main section:nth-of-type(2) {
