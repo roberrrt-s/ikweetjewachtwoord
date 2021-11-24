@@ -29,6 +29,7 @@ header {
 
 header section {
 	flex: 1;
+	text-align: left;
 }
 
 header section:last-of-type {
@@ -37,6 +38,7 @@ header section:last-of-type {
 	font-size: 2em;
 	justify-content: center;
 	align-items: flex-end;
+	text-align: right;
 }
 
 header section:last-of-type a {
