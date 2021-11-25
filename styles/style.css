@@ -55,6 +55,7 @@ header section:last-of-type a:focus {
 
 header svg {
 	max-height: var(--header-height);
+	max-width: var(--header-height);
 	margin-left: .5em;
 }
 
