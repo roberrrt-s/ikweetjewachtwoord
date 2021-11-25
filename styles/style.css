@@ -80,7 +80,7 @@ main section {
 	margin-top: var(--margin-top);
 }
 
-main section:first-of-type {
+main section:first-of-type h1 {
 	display: flex;
 	flex-flow: column nowrap;
 }
