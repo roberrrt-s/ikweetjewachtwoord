@@ -81,7 +81,7 @@ main section {
 }
 
 main section:first-of-type {
-	display: none;
+	display: flex;
 	flex-flow: column nowrap;
 }
 
