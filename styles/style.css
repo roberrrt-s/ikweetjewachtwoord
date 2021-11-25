@@ -81,7 +81,7 @@ main section {
 }
 
 main section:first-of-type {
-	display: flex;
+	display: none;
 	flex-flow: column nowrap;
 }
 
@@ -167,6 +167,7 @@ main section:nth-of-type(2) {
 main section:nth-of-type(3) {
 	display: flex;
 	flex-flow: row wrap;
+	border-top: 1px solid var(--daniel-pink);
 }
 
 main section:nth-of-type(3) img {
