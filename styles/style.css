@@ -135,6 +135,29 @@ main section:first-of-type span:nth-of-type(2) {
 	align-items: center;
 	background: var(--daniel-pink);
 	color: var(--daniel-black);
+	padding-bottom: 0;
+}
+
+main section:first-of-type span:nth-of-type(2) > span {
+	position: relative;
+	text-align: left;
+	padding: 0;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin-right: auto; /* Gives that scrolling effect as the typing happens */
+	animation: typing 3.5s steps(40, end);
+}
+
+main section:first-of-type span:nth-of-type(2) > span::after {
+	content: '';
+	position: absolute;
+	width: .1em;
+	background: transparent;
+	right: 0;
+	top: .05em;
+	bottom: .05em;
+	border-right: .1em solid var(--daniel-black); /* The typwriter cursor */
+	animation: blink-caret .75s step-end infinite;
 }
 
 main section:nth-of-type(2) {
@@ -495,4 +518,16 @@ main section:nth-of-type(2) {
   93% {
     clip-path: none;
   }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--daniel-black); }
 }
