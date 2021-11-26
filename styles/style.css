@@ -28,7 +28,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body {
 	background: var(--daniel-black);
-	font-family: var(--daniel-font)
+	font-family: var(--daniel-font);
 	color: var(--daniel-pink);
 }
 
