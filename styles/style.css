@@ -12,12 +12,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	--header-height: 6.5em;
 	--margin-top: 5em;
+
+  --daniel-font: "Verlaan Pro", Arial, sans-serif;
 }
 
 @font-face {
-    font-family: 'NeueHaasGroteskText Pro';
-    src: url('../assets/NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
-        url('../assets/NHaasGroteskTXPro-55Rg.woff') format('woff');
+    font-family: 'Verlaan Pro';
+    src: url('../assets/VerlaanPro.woff2') format('woff2'),
+        url('../assets/VerlaanPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -26,7 +28,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body {
 	background: var(--daniel-black);
-	font-family: "NeueHaasGroteskText Pro", Arial, sans-serif;
+	font-family: var(--daniel-font)
 	color: var(--daniel-pink);
 }
 
@@ -208,7 +210,9 @@ main section:nth-of-type(3) p:first-of-type {
 }
 
 main section:nth-of-type(3) a {
-	border-radius: 1em;
+	border-radius: .8em;
+  border-bottom: 1px solid var(--daniel-glow);
+  border-right: 1px solid var(--daniel-glow);
 	padding: .5em 1em;
 	margin-left: 1em;
 	margin-right: auto;
