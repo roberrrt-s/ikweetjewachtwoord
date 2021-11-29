@@ -105,9 +105,11 @@ main section:first-of-type span {
 
 main section:first-of-type span[data-daniel-glitch] {
     position: relative;
+    animation: paths 5s step-end infinite;
+    animation-delay: 5s;
 }
 
-main section:first-of-type span[data-daniel-glitch]::after {
+main section:first-of-type span[data-daniel-glitch]::before {
   content: attr(data-daniel-glitch);
   position: absolute;
   color: var(--daniel-pink);
@@ -123,9 +125,8 @@ main section:first-of-type span[data-daniel-glitch]::after {
 /* https://codepen.io/mattgrosswork/pen/VwprebG?editors=1100 */
 main section:first-of-type span[data-text] {
 	position: relative;
-/*  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);
-*/	animation: paths 5s step-end infinite;
-  animation-delay: 5s;
+	animation: paths 4.5s step-end infinite;
+  animation-delay: 5.5s;
 }
 
 main section:first-of-type span[data-text]::before,
@@ -140,19 +141,19 @@ main section:first-of-type span[data-text]::before {
 	top: 10px;
 	opacity: .5;
 	left: 15px;
-    color: var(--daniel-grey);
+  color: var(--daniel-grey);
 	animation:
 		paths 5s step-end infinite,
 		opacity 5s step-end infinite,
-    	font 8s step-end infinite,
-    	movement 10s step-end infinite;
+    font 8s step-end infinite,
+    movement 10s step-end infinite;
 }
 
 main section:first-of-type span[data-text]::after {
 	top: 5px;
 	opacity: .5;
 	left: -10px;
-    color: var(--daniel-glow);
+  color: var(--daniel-glow);
 	animation:
 		paths 5s step-end infinite,
 		opacity 5s step-end infinite,
