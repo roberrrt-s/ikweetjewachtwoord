@@ -103,11 +103,29 @@ main section:first-of-type span {
 	padding-bottom: .15em;
 }
 
-/* https://codepen.io/mattgrosswork/pen/VwprebG?editors=1100 */
+main section:first-of-type span[data-daniel-glitch] {
+    position: relative;
+}
 
+main section:first-of-type span[data-daniel-glitch]::after {
+  content: attr(data-daniel-glitch);
+  position: absolute;
+  color: var(--daniel-pink);
+  width: 100%;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  clip-path: polygon(0 25%, 100% 25%, 100% 70%, 0 70%);
+  background: var(--daniel-black);
+  left: 3px;
+}
+
+/* https://codepen.io/mattgrosswork/pen/VwprebG?editors=1100 */
 main section:first-of-type span[data-text] {
 	position: relative;
-	animation: paths 5s step-end infinite;
+/*  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);
+*/	animation: paths 5s step-end infinite;
+  animation-delay: 5s;
 }
 
 main section:first-of-type span[data-text]::before,
